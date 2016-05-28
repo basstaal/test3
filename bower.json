@@ -1,0 +1,20 @@
+{
+  "name": "bas",
+  "description": "bas opdracht can polymer",
+  "main": "index.html",
+  "authors": [
+    "bas"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0"
+  }
+}
