@@ -1,0 +1,37 @@
+<link rel="import"  href="https://github.com/basstaal/getal/number-euro.git">
+<link rel="import"  href="https://polygit2.appspot.com/components/polymer/polymer.html">
+
+<dom-module id="number-euro">
+
+    <template>
+            <form name="numberinput">
+        <table border="0">
+        <tr>
+        <td>Voegt automatisch een €-teken toe (tenzij dat al ingevuld wordt): </td><td><input type="text" id="number" onblur="numbereuro()" /></td>
+        </tr>
+        <tr>
+        <td colspan="2" align="center"><input type="button" value="Bewerk" /></td>
+        </tr>
+        </table>
+        </form>
+        </form>
+    </template>
+
+
+
+    <script>
+    Polymer({
+      is: "number-euro"
+    });
+    
+function numbereuro()      
+{
+var euroPlus = document.getElementById('number').value                 
+ if (euroPlus.indexOf("€") != 0)
+   {
+      euroPlus = "€" + euroPlus;
+       document.getElementById("number").value = euroPlus;
+   }
+
+    </script>
+    </dom-module>
